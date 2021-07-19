@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --anaranjado: #F3603B;
+    --anaranjado-2: #F3613C;
+    --azul: #232C50;
+    --blanco: #FFFFFF;
+    --gris: #B9B9C1;
+    --gris-2: #FAFAFA;
+    --gris-3: #8C8C94;
+    --negro: #000000;
+    --negro-2: #1E1E26;
+}
+
+body{
+    background-color: var(--blanco);
+    font-family: 'Be Vietnam', sans-serif;
+}
+
+header{
+    height: 175px;
+    padding: 0px 165px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+header nav ul{
+    list-style: none;
+    width: 380px;
+    display: flex;
+    justify-content: space-between;
+}
+header nav ul li a{
+    color: var(--azul);
+    font-size: 13px;
+    text-decoration: none;
+}
+
+button.get-started{
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    height: 44px;
+    width: 134px;
+}
+button.number-go{
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    height: 44px;
+    width: 70px;
+}
+button.get-started:hover, button.number-go:hover{
+    cursor: pointer;
+}
+button.type-1, button.number-go{
+    background-color: var(--anaranjado);
+    color: var(--blanco);
+}
+button.type-2{
+    background-color: var(--blanco);
+    color: var(--anaranjado);
+}
+
+main section.home, main section.about-us{
+    margin: 0px 10% 125px;
+    display: flex;
+    justify-content: space-between;
+}
+main section.home div.sentence-home{
+    height: 385px;
+    width: 440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+main section.home div.sentence-home h2{
+    font-size: 3.25rem;
+    font-weight: 700;
+}
+main section.home div.sentence-home p{
+    width: 350px;
+}
+main section.home div.pictures-home{
+    height: 485px;
+    width: 540px;
+}
+
+h2, h3, p.title-text{
+    color: var(--azul);
+    font-weight: 700;
+}
+p.body-text{
+    color: var(--gris);
+}
+
+main section.about-us h3{
+    font-size: 2.25rem;
+    font-weight: 700; 
+}
+main section.about-us div p.aboutManage{
+    width: 75%;
+    position: relative;
+    top: 36px;
+}
+
+main section.about-us div.list div{
+    height: 160px;
+    width: 555px;
+    display: flex;
+}
+main section.about-us div.list div button.number-go{
+    position: relative;
+    top: 10px;
+}
+main section.about-us div.list div div{
+    padding-left: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+main section.testimonies{
+    margin: 0px 70px 180px;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+main section.testimonies h2{
+    align-self: center;
+    font-size: 40px;
+}
+main section.testimonies div{
+    display: flex;
+    flex-direction: row;
+}
+main section.testimonies div article{
+    background-color: var(--gris-2);
+    height: 220px;
+    width: 445px;
+    padding: 55px 0px 38px;
+    position: relative;
+}
+main section.testimonies div article img{
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    right: 50%;
+    top: -35px;
+}
+main section.testimonies div article div{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+} 
+main section.testimonies button{
+    align-self: center;
+}
+
+main section.simplify{
+    background-color: var(--anaranjado-2);
+    height: 225px;
+    padding: 65px 165px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+main section.simplify p{
+    color: var(--blanco);
+    font-size: 40px;
+    font-weight: 700;
+    width: 440px;
+}
+
+footer{
+    background-color: var(--negro-2);
+    height: 250px;
+    padding: 70px 170px;
+    display: flex;
+    justify-content: space-between;
+}
+footer div.social-media, footer div.links-1, footer div.links-2, footer div.form-copyright{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+footer div.social-media div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer div.links-2 .invisible{
+    visibility: hidden;
+}
+footer div.links:nth-child(3){
+    justify-content: flex-start;
+}
+footer div.links-1 a, footer div.links-2 a{
+    color: var(--blanco);
+    font-weight: 400;
+    text-decoration: none;
+}
+footer div.form-copyright{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+footer div.form-copyright form input{
+    border: none;
+    border-radius: 50px;
+    height: 45px;
+    width: 200px;
+    padding: 10px;
+}
+footer div.form-copyright p{
+    color: var(--gris-3);
+    font-size: 12.5px;
+}
+
+
+
+
+
